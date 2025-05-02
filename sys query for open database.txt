@@ -1,0 +1,8 @@
+show con_name;
+select name, con_id from v$pdbs;
+alter session set container=orclpdb;   *
+show con_name;
+select name, open_mode from v$pdbs;    *
+alter PLUGGABLE DATABASE open;         *
+select *from all_users; 
+ALTER USER hr identified by hr account unlock;
